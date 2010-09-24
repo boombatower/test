@@ -1,0 +1,71 @@
+<?php
+/**
+ * @file
+ * Provide sample test classes to test conduit drupal worker functionality.
+ *
+ * @author Jim Berry ("solotandem", http://drupal.org/user/240748)
+ */
+
+/**
+ * Base test case.
+ *
+ * Worker plugins are expected to extend this test case and test the
+ * functionality of their worker review.
+ */
+class SampleBaseTestCase extends DrupalUnitTestCase { // or DrupalWebTestCase
+
+}
+
+/**
+ * Sample one test case.
+ *
+ * This test will ...
+ */
+class SampleOneTestCase extends SampleBaseTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'Sample One Test Case',
+      'description' => 'Add this.',
+      'group' => 'Conduit',
+    );
+  }
+
+  protected function setUp() {
+    parent::setUp('test');
+  }
+
+  protected function testOne() {
+    $this->checkOne();
+  }
+
+  protected function checkOne() {
+    // Add this...
+  }
+}
+
+/**
+ * Sample two test case.
+ *
+ * This test will ...
+ */
+class SampleTwoTestCase extends SampleBaseTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'Sample Two Test Case',
+      'description' => 'Add this.',
+      'group' => 'Conduit',
+    );
+  }
+
+  protected function setUp() {
+    parent::setUp('test');
+  }
+
+  protected function testTwo() {
+    $this->checkTwo();
+  }
+
+  protected function checkTwo() {
+    // Add this...
+  }
+}
