@@ -1,0 +1,7 @@
+name = Test
+description = Conduit test module.
+package = Conduit
+core = 7.x
+hidden = true
+files[] = test.module
+files[] = test.test
