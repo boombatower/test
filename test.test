@@ -39,7 +39,9 @@ class SampleOneTestCase extends SampleBaseTestCase {
   }
 
   protected function checkOne() {
-    // Add this...
+    for ($i = 0; $i < 17; $i++) {
+      $this->pass('Assertion ' . $i);
+    }
   }
 }
 
@@ -66,6 +68,11 @@ class SampleTwoTestCase extends SampleBaseTestCase {
   }
 
   protected function checkTwo() {
-    // Add this...
+    for ($i = 0; $i < 17; $i++) {
+      $this->pass('Assertion ' . $i);
+      if ($i == 8) {
+        $this->fail('Woops!');
+      }
+    }
   }
 }
