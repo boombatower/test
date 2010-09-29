@@ -1,16 +1,13 @@
 <?php
 /**
  * @file
- * Provide sample test classes to test conduit drupal worker functionality.
+ * Provide sample test classes.
  *
  * @author Jim Berry ("solotandem", http://drupal.org/user/240748)
  */
 
 /**
  * Base test case.
- *
- * Worker plugins are expected to extend this test case and test the
- * functionality of their worker review.
  */
 class SampleBaseTestCase extends DrupalUnitTestCase { // or DrupalWebTestCase
 
@@ -26,7 +23,7 @@ class SampleOneTestCase extends SampleBaseTestCase {
     return array(
       'name' => 'Sample One Test Case',
       'description' => 'Add this.',
-      'group' => 'Conduit',
+      'group' => 'Other',
     );
   }
 
@@ -55,7 +52,7 @@ class SampleTwoTestCase extends SampleBaseTestCase {
     return array(
       'name' => 'Sample Two Test Case',
       'description' => 'Add this.',
-      'group' => 'Conduit',
+      'group' => 'Other',
     );
   }
 
